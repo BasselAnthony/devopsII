@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-my-config
+data:
+  API_URL: http://basselanthony.com/api
+  db_connection_string: mongodb://localhost/lottery

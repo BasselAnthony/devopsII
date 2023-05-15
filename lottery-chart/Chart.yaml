@@ -1,0 +1,17 @@
+apiVersion: v2
+name: lottery-app
+description: A Helm chart for my lottery app
+version: 1.0.0
+appVersion: 1.0.0
+templates:
+  - app-deployment.yaml
+  - app-service.yaml
+  - client-deployment.yaml
+  - client-service.yaml
+  - mongo-deployment.yaml
+  - mongo-service.yaml
+  - mongo-pvc.yaml
+  - mongo-pv.yaml
+  - ingress.yaml
+  - backend-hpa.yaml
+  - frontend-hpa.yaml
